@@ -1,0 +1,18 @@
+{
+    # 使用本地TLS证书，跳过在线验证
+    skip_install_trust
+}
+
+:443 {
+    # 为IP地址生成本地证书
+    tls internal {
+        alpn http/1.1
+    }
+    
+    reverse_proxy localhost:8080
+}
+
+:80 {
+    # HTTP重定向到HTTPS
+    redir https://{host}:{port}{uri} permanent
+}

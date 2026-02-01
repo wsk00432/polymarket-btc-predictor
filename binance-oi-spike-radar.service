@@ -1,0 +1,15 @@
+[Unit]
+Description=Binance OI Spike Radar
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/clawd/binance-oi-spike-radar-clone
+Environment=PATH=/root/clawd/binance-oi-spike-radar-clone/.venv/bin
+ExecStart=/root/clawd/binance-oi-spike-radar-clone/.venv/bin/python -m src.main
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

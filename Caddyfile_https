@@ -1,0 +1,10 @@
+http://43.167.222.200 {
+    redir https://43.167.222.200 permanent
+}
+
+https://43.167.222.200 {
+    # 如果没有有效域名，使用自签名证书
+    tls internal
+    
+    reverse_proxy localhost:8080
+}

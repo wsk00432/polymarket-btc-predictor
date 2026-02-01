@@ -1,0 +1,12 @@
+{
+    skip_install_trust
+}
+
+:443 {
+    tls internal
+    reverse_proxy localhost:8080
+}
+
+:80 {
+    redir https://43.167.222.200:443 permanent
+}
