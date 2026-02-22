@@ -1,0 +1,38 @@
+# Logs
+*.log
+*.log.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Large data files
+prediction_outcomes.json
+performance_log.json
+predictions/*.json
+
+# Backup files
+*.backup
+*.bak
+temp_*.json
+
+# Service state files
+service_start.log
+continuous_runner.py
+
+# Editor files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/

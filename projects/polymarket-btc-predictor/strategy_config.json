@@ -1,0 +1,17 @@
+{
+  "indicator_weights": {
+    "rsi": 0.2899999999999998,
+    "macd": 0.25,
+    "ma_trend": 0.5,
+    "volume": 0.15,
+    "bollinger": 0.15,
+    "macd_histogram": 0.09,
+    "volume_indicator": 0.09,
+    "bollinger_position": 0.34399999999999986,
+    "momentum": 0.5
+  },
+  "sentiment_weight": 0.14999999999999977,
+  "confidence_threshold": 0.6,
+  "learning_rate": 0.1,
+  "adjustment_sensitivity": 0.05
+}
