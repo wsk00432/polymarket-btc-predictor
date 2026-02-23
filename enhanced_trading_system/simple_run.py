@@ -9,9 +9,13 @@ import logging
 from datetime import datetime
 from typing import Dict, List
 
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 # Import modules directly instead of using relative imports
 from core_engine import EnhancedTradingSystem
-from api_integration import OISpikeRadarIntegration
+from oi_radar_integration import OISpikeRadarIntegration
 from config import DEFAULT_CONFIG
 LOG_LEVEL = DEFAULT_CONFIG['LOG_LEVEL']
 LOG_FILE = DEFAULT_CONFIG['LOG_FILE']
@@ -192,9 +196,11 @@ async def run_enhanced_analysis():
     finally:
         # Clean up connections
         try:
-            await trading_system.binance_api.close()
-            await trading_system.oi_radar.close()
-        except:
+            if hasattr(trading_system, 'binance_api') and trading_system.binance_api:
+                await trading_system.binance_api.close()
+            if hasattr(trading_system, 'oi_radar') and trading_system.oi_radar:
+                await trading_system.oi_radar.close()
+        except Exception as e:
             pass  # Ignore cleanup errors
     
     print(f"\n✅ Enhanced Trading Analysis Complete!")

@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-02-03T07:14:09.926252",
+  "checks": {
+    "api_health": {
+      "status": "ERROR",
+      "details": "API not accessible: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9c3a909410>: Failed to establish a new connection: [Errno 111] Connection refused'))"
+    },
+    "latest_prediction": {
+      "status": "ERROR",
+      "details": "Prediction request failed: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /predict (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9c3a90bc10>: Failed to establish a new connection: [Errno 111] Connection refused'))"
+    },
+    "prediction_history": {
+      "status": "ERROR",
+      "details": "History request failed: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /history (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9c3a912110>: Failed to establish a new connection: [Errno 111] Connection refused'))"
+    },
+    "service_stats": {
+      "status": "ERROR",
+      "details": "Stats request failed: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /stats (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9c3a918510>: Failed to establish a new connection: [Errno 111] Connection refused'))"
+    },
+    "system_resources": {
+      "status": "OK",
+      "details": {
+        "cpu_percent": 0.5,
+        "memory_percent": 53.0,
+        "disk_percent": 26.7,
+        "timestamp": "2026-02-03T07:14:10.943034"
+      }
+    }
+  },
+  "prediction_files_count": 7
+}

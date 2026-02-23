@@ -8,12 +8,16 @@ import logging
 from datetime import datetime
 from typing import Dict, List
 
-from .trading_system import EnhancedTradingSystem
-from .data_fetcher import DataFetcher, MockDataFetcher
-from .config import get_config, validate_config
-from .models import TradingSignal, TradingSignalPanel
-from .utils import setup_logging, generate_signal_summary
-from .backtester import run_sample_backtest
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from trading_system import EnhancedTradingSystem
+from data_fetcher import DataFetcher, MockDataFetcher
+from config import get_config, validate_config
+from models import TradingSignal, TradingSignalPanel
+from utils import setup_logging, generate_signal_summary
+from backtester import run_sample_backtest
 
 
 class TradingApp:

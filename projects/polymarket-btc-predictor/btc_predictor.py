@@ -59,6 +59,20 @@ class BTCPredictor:
                 self.use_sentiment = False
                 logger.warning("No real-data sentiment analyzer available, sentiment analysis disabled to prevent simulated data usage")
         
+        # Import ClawFeed news sentiment integration (NEW - Phase 1)
+        try:
+            from integrations.news_sentiment_analyzer import NewsSentimentAnalyzer
+            from integrations.clawfeed_client import create_clawfeed_client
+            self.news_sentiment_analyzer = NewsSentimentAnalyzer()
+            self.clawfeed_client = create_clawfeed_client(use_mock=True)  # Use mock until ClawFeed is deployed
+            self.use_news_sentiment = True
+            logger.info("ClawFeed News Sentiment Analyzer loaded (Phase 1 Integration)")
+        except ImportError as e:
+            self.news_sentiment_analyzer = None
+            self.clawfeed_client = None
+            self.use_news_sentiment = False
+            logger.warning(f"ClawFeed integration not available: {e}")
+        
         # Import self-learning module
         try:
             from self_learning_module import SelfLearningModule
@@ -319,13 +333,53 @@ class BTCPredictor:
         # Generate base prediction from technical analysis
         direction, confidence, analyzed_indicators = self.generate_prediction(indicators)
         
-        # Integrate sentiment analysis if available
+        # Integrate news sentiment from ClawFeed (NEW - Phase 1)
+        news_sentiment_data = None
+        if self.use_news_sentiment and self.news_sentiment_analyzer and self.clawfeed_client:
+            try:
+                # Fetch latest crypto news
+                crypto_news = self.clawfeed_client.get_crypto_news(limit=20)
+                
+                if crypto_news:
+                    # Analyze sentiment of news batch
+                    news_sentiment_data = self.news_sentiment_analyzer.analyze_news_batch(crypto_news)
+                    logger.info(f"News sentiment: {news_sentiment_data['sentiment_label']} ({news_sentiment_data['combined_sentiment']:.3f}) from {news_sentiment_data['item_count']} items")
+                else:
+                    logger.warning("No crypto news available for sentiment analysis")
+            except Exception as e:
+                logger.error(f"Error in news sentiment analysis: {e}")
+                news_sentiment_data = None
+        
+        # Integrate traditional sentiment analysis if available
         if self.use_sentiment and self.sentiment_analyzer:
             try:
                 sentiment_result = self.sentiment_analyzer.integrate_with_prediction(confidence, direction)
                 final_direction = sentiment_result['final_direction']
                 final_confidence = sentiment_result['final_confidence']
                 sentiment_data = sentiment_result['sentiment_data']
+                
+                # Combine with news sentiment if available
+                if news_sentiment_data:
+                    # Weight: 70% traditional sentiment, 30% news sentiment
+                    news_weight = 0.3
+                    traditional_weight = 0.7
+                    
+                    # Adjust confidence based on news sentiment agreement
+                    if (news_sentiment_data['sentiment_label'] == 'positive' and final_direction == 'UP') or \
+                       (news_sentiment_data['sentiment_label'] == 'negative' and final_direction == 'DOWN'):
+                        # News confirms prediction, boost confidence
+                        final_confidence = min(1.0, final_confidence * (1 + news_weight * 0.5))
+                    elif (news_sentiment_data['sentiment_label'] == 'positive' and final_direction == 'DOWN') or \
+                         (news_sentiment_data['sentiment_label'] == 'negative' and final_direction == 'UP'):
+                        # News contradicts prediction, reduce confidence
+                        final_confidence = final_confidence * (1 - news_weight * 0.3)
+                    
+                    # Add news data to sentiment result
+                    sentiment_data['news_sentiment'] = news_sentiment_data
+                    sentiment_data['combined_sentiment'] = (
+                        traditional_weight * sentiment_data.get('combined_sentiment', 0) +
+                        news_weight * news_sentiment_data['combined_sentiment']
+                    )
             except Exception as e:
                 logger.error(f"Error in sentiment analysis: {e}")
                 # Fall back to technical-only prediction
@@ -333,10 +387,10 @@ class BTCPredictor:
                 final_confidence = confidence
                 sentiment_data = None
         else:
-            # Use technical analysis only
+            # Use technical analysis only (or just news sentiment if available)
             final_direction = direction
             final_confidence = confidence
-            sentiment_data = None
+            sentiment_data = news_sentiment_data if news_sentiment_data else None
         
         # Only predict if confidence is high enough
         if final_confidence < self.confidence_threshold:

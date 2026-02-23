@@ -10,8 +10,12 @@ import logging
 from datetime import datetime
 from typing import Dict, List
 
-from .core_engine import EnhancedTradingSystem
-from .api_integration import OISpikeRadarIntegration
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from core_engine import EnhancedTradingSystem
+from oi_radar_integration import OISpikeRadarIntegration
 from .config import LOG_LEVEL, LOG_FILE
 
 # Configure logging

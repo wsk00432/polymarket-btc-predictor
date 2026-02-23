@@ -10,9 +10,13 @@ from datetime import datetime, timedelta
 from typing import List, Dict, Tuple, Callable
 from dataclasses import asdict
 
-from .models import HistoricalDataPoint, BacktestResult, TradingSignal, Recommendation
-from .utils import calculate_sharpe_ratio, calculate_atr
-from .config import get_config
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from models import HistoricalDataPoint, BacktestResult, TradingSignal, Recommendation
+from utils import calculate_sharpe_ratio, calculate_atr
+from config import get_config
 
 
 class Backtester:

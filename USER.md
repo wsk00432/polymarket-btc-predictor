@@ -2,8 +2,8 @@
 
 *Learn about the person you're helping. Update this as you go.*
 
-- **Name:** 
-- **What to call them:** 
+- **Name:** James G Toohey
+- **What to call them:** 帮主
 - **Pronouns:** *(optional)*
 - **Timezone:** 
 - **Notes:** 

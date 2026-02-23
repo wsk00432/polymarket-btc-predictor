@@ -13,7 +13,14 @@ from typing import Dict, List, Optional
 import pandas as pd
 import numpy as np
 
-from api_integration import BinanceAPIIntegration, OISpikeRadarIntegration, TechnicalIndicatorCalculator
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+# Import correct classes from api_integration
+from api_integration import BinanceAPIManager, APIIntegrationManager
+from oi_radar_integration import OISpikeRadarIntegration
+from technical_calculator import TechnicalIndicatorCalculator
 from config import DEFAULT_CONFIG
 DEFAULT_RISK_PER_TRADE = DEFAULT_CONFIG['MAX_RISK_PER_TRADE']
 
@@ -31,7 +38,7 @@ class EnhancedTradingSystem:
     def __init__(self, api_key: str = None, secret_key: str = None):
         self.api_key = api_key
         self.secret_key = secret_key
-        self.binance_api = BinanceAPIIntegration(api_key, secret_key)
+        self.binance_api = BinanceAPIManager(api_key, secret_key)
         self.oi_radar = OISpikeRadarIntegration()
         self.indicator_calc = TechnicalIndicatorCalculator()
         self.order_book_depth = {}
@@ -96,7 +103,7 @@ class EnhancedTradingSystem:
         Get real-time order book depth data
         """
         try:
-            order_book = await self.binance_api.get_order_book(symbol, limit)
+            order_book = await self.binance_api.get_order_book_async(symbol, limit)
             
             if not order_book:
                 return {}

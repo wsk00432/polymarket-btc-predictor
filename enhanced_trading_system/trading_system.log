@@ -1,0 +1,4 @@
+2026-02-02 09:09:36,091 - EnhancedTradingSystem - INFO - Using mock data fetcher for simulation
+2026-02-02 09:09:36,091 - EnhancedTradingSystem - INFO - Trading system initialized without API credentials
+2026-02-02 09:09:36,091 - EnhancedTradingSystem - INFO - Initializing Enhanced Trading Analysis System
+2026-02-02 09:09:36,167 - EnhancedTradingSystem - INFO - Application initialization complete

@@ -1,0 +1,182 @@
+{
+  "generated_at": "2026-02-03T07:14:26.764025",
+  "checks": {
+    "api_health": {
+      "status": "OK",
+      "details": {
+        "service": "BTC Predictor API",
+        "status": "healthy",
+        "timestamp": "2026-02-03T07:14:26.767950"
+      }
+    },
+    "latest_prediction": {
+      "status": "OK",
+      "details": {
+        "confidence": 0.00024842041318356273,
+        "current_price": 78766.37,
+        "indicators": {
+          "bollinger_position": 0.7061699061314474,
+          "ma_trend": 4.471321483154951e-05,
+          "macd_histogram": 0.0,
+          "momentum": 0.00023327576573367378,
+          "rsi": 54.660626119038895,
+          "volume_indicator": -4.952118814214006e-05
+        },
+        "prediction": "HOLD",
+        "prediction_window_minutes": 15,
+        "reason": "Low confidence: 0.00",
+        "timestamp": "2026-02-03T07:14:26.797126"
+      }
+    },
+    "prediction_history": {
+      "status": "OK",
+      "details": [
+        {
+          "confidence": 0.0001553080253320359,
+          "current_price": 78757.11,
+          "indicators": {
+            "bollinger_position": 0.6494454732514465,
+            "ma_trend": 3.883296641836633e-05,
+            "macd_histogram": 0.0,
+            "momentum": 0.00011568547772642584,
+            "rsi": 53.49231967943104,
+            "volume_indicator": -2.536225682074841e-05
+          },
+          "prediction": "HOLD",
+          "prediction_window_minutes": 15,
+          "reason": "Low confidence: 0.00",
+          "timestamp": "2026-02-03T07:14:15.192868"
+        },
+        {
+          "confidence": 0.24719964591386784,
+          "current_price": 78808.86,
+          "indicators": {
+            "bollinger_position": 0.3191132872445695,
+            "ma_trend": 0.0001957005347548018,
+            "macd_histogram": 0.0,
+            "momentum": -0.003253354250855151,
+            "rsi": 27.41696386370505,
+            "volume_indicator": 4.106606347560831e-05
+          },
+          "prediction": "HOLD",
+          "prediction_window_minutes": 15,
+          "reason": "Low confidence: 0.25",
+          "timestamp": "2026-02-02T23:54:44.648092"
+        },
+        {
+          "confidence": 0.001539744367644473,
+          "current_price": 78834.73,
+          "indicators": {
+            "bollinger_position": 0.3849026366456717,
+            "ma_trend": 0.0006201597395812733,
+            "macd_histogram": 0.0,
+            "momentum": -0.0029251507695911157,
+            "rsi": 41.24623115577856,
+            "volume_indicator": 9.672461518939762e-05
+          },
+          "prediction": "HOLD",
+          "prediction_window_minutes": 15,
+          "reason": "Low confidence: 0.00",
+          "timestamp": "2026-02-02T23:53:44.618483"
+        },
+        {
+          "confidence": 0.0019780791818817373,
+          "current_price": 78806.17,
+          "indicators": {
+            "bollinger_position": 0.3602516117272235,
+            "ma_trend": 0.0010036523970821422,
+            "macd_histogram": 0.0,
+            "momentum": -0.0035634988873154178,
+            "rsi": 40.44993644130432,
+            "volume_indicator": -0.00028125672582040234
+          },
+          "prediction": "HOLD",
+          "prediction_window_minutes": 15,
+          "reason": "Low confidence: 0.00",
+          "timestamp": "2026-02-02T23:52:44.591418"
+        },
+        {
+          "confidence": 6.521690015086996e-05,
+          "current_price": 78919.56,
+          "indicators": {
+            "bollinger_position": 0.5083783161502627,
+            "ma_trend": 0.0013497957660262518,
+            "macd_histogram": 0.0,
+            "momentum": -0.0016743426345622039,
+            "rsi": 59.13718047960311,
+            "volume_indicator": -0.00064002133155962
+          },
+          "prediction": "HOLD",
+          "prediction_window_minutes": 15,
+          "reason": "Low confidence: 0.00",
+          "timestamp": "2026-02-02T23:51:44.564340"
+        },
+        {
+          "confidence": 0.003309063682689312,
+          "current_price": 78949.81,
+          "indicators": {
+            "bollinger_position": 0.5656729607240071,
+            "ma_trend": 0.0016539234943472212,
+            "macd_histogram": 0.0,
+            "momentum": 4.686741373320471e-05,
+            "rsi": 64.83486280557608,
+            "volume_indicator": -3.0433813158890542e-05
+          },
+          "prediction": "HOLD",
+          "prediction_window_minutes": 15,
+          "reason": "Low confidence: 0.00",
+          "timestamp": "2026-02-02T23:50:44.539327"
+        },
+        {
+          "confidence": 0.24425500305701478,
+          "current_price": 79093.81,
+          "indicators": {
+            "bollinger_position": 0.7438339456627151,
+            "ma_trend": 0.0022981150015468892,
+            "macd_histogram": 0.0,
+            "momentum": 0.001187595087037257,
+            "rsi": 73.01827737421719,
+            "volume_indicator": -2.588543143053781e-05
+          },
+          "prediction": "HOLD",
+          "prediction_window_minutes": 15,
+          "reason": "Low confidence: 0.24",
+          "timestamp": "2026-02-02T23:49:44.514284"
+        },
+        {
+          "confidence": 0.005267706120881998,
+          "current_price": 79030.61,
+          "indicators": {
+            "bollinger_position": 0.7048153973182385,
+            "ma_trend": 0.0024761245656835912,
+            "macd_histogram": 0.0,
+            "momentum": 0.00011566476806872129,
+            "rsi": 69.91750841750888,
+            "volume_indicator": 0.00013319481429739546
+          },
+          "prediction": "HOLD",
+          "prediction_window_minutes": 15,
+          "reason": "Low confidence: 0.01",
+          "timestamp": "2026-02-02T23:48:44.485195"
+        }
+      ]
+    },
+    "service_stats": {
+      "status": "OK",
+      "details": {
+        "accuracy": "N/A - Actual outcome tracking required",
+        "total_predictions": 8
+      }
+    },
+    "system_resources": {
+      "status": "OK",
+      "details": {
+        "cpu_percent": 0.0,
+        "memory_percent": 58.0,
+        "disk_percent": 26.7,
+        "timestamp": "2026-02-03T07:14:27.813621"
+      }
+    }
+  },
+  "prediction_files_count": 8
+}

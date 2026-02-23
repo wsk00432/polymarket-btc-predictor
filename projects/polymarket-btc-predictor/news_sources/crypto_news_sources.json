@@ -1,0 +1,135 @@
+{
+  "sources": [
+    {
+      "name": "CoinDesk",
+      "type": "news",
+      "weight": 1.0,
+      "url": "https://www.coindesk.com",
+      "rss": "https://www.coindesk.com/arc/outboundfeeds/rss",
+      "twitter": "@coindesk"
+    },
+    {
+      "name": "Cointelegraph",
+      "type": "news",
+      "weight": 1.0,
+      "url": "https://cointelegraph.com",
+      "rss": "https://cointelegraph.com/rss",
+      "twitter": "@Cointelegraph"
+    },
+    {
+      "name": "The Block",
+      "type": "news",
+      "weight": 0.9,
+      "url": "https://www.theblock.co",
+      "rss": "https://www.theblock.co/rss.xml",
+      "twitter": "@TheBlock__"
+    },
+    {
+      "name": "Decrypt",
+      "type": "news",
+      "weight": 0.8,
+      "url": "https://decrypt.co",
+      "rss": "https://decrypt.co/feed",
+      "twitter": "@decryptmedia"
+    },
+    {
+      "name": "Bitcoin Magazine",
+      "type": "news",
+      "weight": 0.9,
+      "url": "https://bitcoinmagazine.com",
+      "rss": "https://bitcoinmagazine.com/.rss",
+      "twitter": "@BitcoinMagazine"
+    },
+    {
+      "name": "CryptoSlate",
+      "type": "news",
+      "weight": 0.8,
+      "url": "https://cryptoslate.com",
+      "rss": "https://cryptoslate.com/feed",
+      "twitter": "@CryptoSlate"
+    },
+    {
+      "name": "CoinMarketCap News",
+      "type": "news",
+      "weight": 0.7,
+      "url": "https://coinmarketcap.com/headlines/news",
+      "twitter": "@CoinMarketCap"
+    },
+    {
+      "name": "Blockworks",
+      "type": "news",
+      "weight": 0.8,
+      "url": "https://blockworks.co",
+      "rss": "https://blockworks.co/feed",
+      "twitter": "@Blockworks_"
+    }
+  ],
+  "social_media": [
+    {
+      "name": "twitter",
+      "weight": 0.7,
+      "accounts": [
+        "@elonmusk",
+        "@VitalikButerin",
+        "@michael_saylor",
+        "@APompliano",
+        "@DocumentingBTC",
+        "@whale_alert"
+      ]
+    },
+    {
+      "name": "reddit",
+      "weight": 0.6,
+      "subreddits": [
+        "r/Bitcoin",
+        "r/CryptoCurrency",
+        "r/Ethereum",
+        "r/CryptoMarkets"
+      ]
+    }
+  ],
+  "influencers": [
+    {
+      "name": "Michael Saylor",
+      "twitter": "@michael_saylor",
+      "weight": 0.9,
+      "bias": "bullish"
+    },
+    {
+      "name": "Vitalik Buterin",
+      "twitter": "@VitalikButerin",
+      "weight": 0.9,
+      "bias": "neutral"
+    },
+    {
+      "name": "CZ Binance",
+      "twitter": "@cz_binance",
+      "weight": 0.8,
+      "bias": "neutral"
+    },
+    {
+      "name": "Anthony Pompliano",
+      "twitter": "@APompliano",
+      "weight": 0.7,
+      "bias": "bullish"
+    }
+  ],
+  "sentiment_keywords": {
+    "btc_specific": {
+      "positive": ["halving", "adoption", "institutional", "etf", "reserve", "treasury"],
+      "negative": ["ban", "crackdown", "crash", "bubble", "ponzi", "fraud"]
+    },
+    "market_specific": {
+      "positive": ["bull run", "ath", "breakout", "rally", "moon"],
+      "negative": ["bear market", "crash", "correction", "dump", "blood"]
+    }
+  },
+  "config": {
+    "update_interval_hours": 1,
+    "max_news_items": 100,
+    "min_sentiment_threshold": 0.1,
+    "enable_social_media": true,
+    "enable_rss": true,
+    "language": "en"
+  }
+}

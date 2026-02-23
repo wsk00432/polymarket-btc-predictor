@@ -10,8 +10,12 @@ from typing import Dict, List, Any, Optional
 import pandas as pd
 import numpy as np
 
-from .models import TechnicalIndicators, KlineData, OrderBookDepth, FundFlow, OISignal, TradingSignal
-from .config import get_config
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from models import TechnicalIndicators, KlineData, OrderBookDepth, FundFlow, OISignal, TradingSignal
+from config import get_config
 
 
 def calculate_rsi(prices: List[float], period: int = 14) -> float:

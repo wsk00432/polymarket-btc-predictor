@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-02-02T23:49:34.109331",
+  "checks": {
+    "api_health": {
+      "status": "OK",
+      "details": {
+        "service": "BTC Predictor API",
+        "status": "healthy",
+        "timestamp": "2026-02-02T23:49:34.113289"
+      }
+    },
+    "latest_prediction": {
+      "status": "OK",
+      "details": {
+        "confidence": 0.24430317430112106,
+        "current_price": 79087.11,
+        "indicators": {
+          "bollinger_position": 0.7370791190950419,
+          "ma_trend": 0.002293877521730557,
+          "macd_histogram": 0.0,
+          "momentum": 0.0011027849497195548,
+          "rsi": 72.831932773109,
+          "volume_indicator": 4.190470465509951e-06
+        },
+        "prediction": "HOLD",
+        "prediction_window_minutes": 15,
+        "reason": "Low confidence: 0.24",
+        "timestamp": "2026-02-02T23:49:34.141738"
+      }
+    },
+    "prediction_history": {
+      "status": "OK",
+      "details": [
+        {
+          "confidence": 0.005267706120881998,
+          "current_price": 79030.61,
+          "indicators": {
+            "bollinger_position": 0.7048153973182385,
+            "ma_trend": 0.0024761245656835912,
+            "macd_histogram": 0.0,
+            "momentum": 0.00011566476806872129,
+            "rsi": 69.91750841750888,
+            "volume_indicator": 0.00013319481429739546
+          },
+          "prediction": "HOLD",
+          "prediction_window_minutes": 15,
+          "reason": "Low confidence: 0.01",
+          "timestamp": "2026-02-02T23:48:44.485195"
+        }
+      ]
+    },
+    "service_stats": {
+      "status": "OK",
+      "details": {
+        "accuracy": "N/A - Actual outcome tracking required",
+        "total_predictions": 1
+      }
+    },
+    "system_resources": {
+      "status": "OK",
+      "details": {
+        "cpu_percent": 0.5,
+        "memory_percent": 58.0,
+        "disk_percent": 26.7,
+        "timestamp": "2026-02-02T23:49:35.158365"
+      }
+    }
+  },
+  "prediction_files_count": 1
+}

@@ -13,12 +13,13 @@ from typing import Dict, List, Optional
 import pandas as pd
 import numpy as np
 
-# Placeholder imports for APIs (will install if needed)
-try:
-    from binance.client import Client
-    from binance.async_client import AsyncClient
-except ImportError:
-    print("Binance client not installed. Will need to install python-binance")
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+# Import from our new API integration module
+from api_integration import get_api_manager, get_symbol_data, get_technical_data_cached
+from config import get_config
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -34,40 +35,33 @@ class EnhancedTradingSystem:
     def __init__(self, api_key: str = None, secret_key: str = None):
         self.api_key = api_key
         self.secret_key = secret_key
-        self.binance_client = None
+        self.api_manager = None
         self.order_book_depth = {}
         self.kline_data = {}
         self.technical_indicators = {}
         self.oi_signals = {}
         self.risk_management = RiskManagement()
-        
-        # Initialize Binance client if credentials provided
-        if api_key and secret_key:
-            try:
-                self.binance_client = Client(api_key, secret_key)
-                logger.info("Binance client initialized successfully")
-            except Exception as e:
-                logger.error(f"Failed to initialize Binance client: {e}")
     
     async def initialize_async_client(self):
-        """Initialize asynchronous Binance client"""
-        if self.api_key and self.secret_key:
-            try:
-                self.async_binance_client = await AsyncClient.create(
-                    api_key=self.api_key, 
-                    api_secret=self.secret_key
-                )
-                logger.info("Async Binance client initialized successfully")
-            except Exception as e:
-                logger.error(f"Failed to initialize Async Binance client: {e}")
+        """Initialize API manager"""
+        self.api_manager = await get_api_manager()
+        logger.info("API manager initialized successfully")
     
-    async def get_technical_indicators(self, symbol: str, interval: str = '5m') -> Dict:
+    async def get_technical_indicators(self, symbol: str, interval: str = None) -> Dict:
         """
         Get real-time technical indicators (RSI, MACD, Bollinger Bands, Moving Averages)
         """
         try:
-            # Get klines for calculation
-            klines = self.binance_client.get_klines(symbol=symbol, interval=interval, limit=100)
+            if interval is None:
+                interval = get_config('KLINE_INTERVAL', '5m')
+            
+            # Get technical data from API integration
+            tech_data = await get_technical_data_cached(symbol, interval, 100)
+            klines = tech_data.get('klines', [])
+            
+            if not klines:
+                logger.warning(f"No kline data available for {symbol}")
+                return {}
             
             closes = [float(k[4]) for k in klines]
             highs = [float(k[2]) for k in klines]
@@ -136,19 +130,22 @@ class EnhancedTradingSystem:
             logger.error(f"Error getting technical indicators for {symbol}: {e}")
             return {}
     
-    async def get_kline_data(self, symbol: str, interval: str = '5m', limit: int = 100) -> List:
+    async def get_kline_data(self, symbol: str, interval: str = None, limit: int = None) -> List:
         """
         Get 5-minute K-line data
         """
         try:
-            klines = self.binance_client.get_klines(
-                symbol=symbol, 
-                interval=interval, 
-                limit=limit
-            )
+            if interval is None:
+                interval = get_config('KLINE_INTERVAL', '5m')
+            if limit is None:
+                limit = get_config('KLINE_LIMIT', 100)
+            
+            # Get technical data from API integration
+            tech_data = await get_technical_data_cached(symbol, interval, limit)
+            raw_klines = tech_data.get('klines', [])
             
             formatted_klines = []
-            for kline in klines:
+            for kline in raw_klines:
                 formatted_klines.append({
                     'open_time': kline[0],
                     'open': float(kline[1]),
@@ -170,12 +167,21 @@ class EnhancedTradingSystem:
             logger.error(f"Error getting kline data for {symbol}: {e}")
             return []
     
-    async def get_order_book_depth(self, symbol: str, limit: int = 100) -> Dict:
+    async def get_order_book_depth(self, symbol: str, limit: int = None) -> Dict:
         """
         Get real-time order book depth data
         """
         try:
-            order_book = self.binance_client.get_order_book(symbol=symbol, limit=limit)
+            if limit is None:
+                limit = get_config('ORDER_BOOK_LIMIT', 100)
+            
+            # Get market data which includes order book
+            market_data = await get_symbol_data(symbol)
+            order_book = market_data.get('order_book', {})
+            
+            if not order_book:
+                logger.warning(f"No order book data available for {symbol}")
+                return {}
             
             # Process bids and asks
             bids = [(float(price), float(qty)) for price, qty in order_book['bids']]
@@ -205,16 +211,21 @@ class EnhancedTradingSystem:
             logger.error(f"Error getting order book depth for {symbol}: {e}")
             return {}
     
-    async def analyze_fund_flow(self, symbol: str, interval: str = '5m', limit: int = 100) -> Dict:
+    async def analyze_fund_flow(self, symbol: str, interval: str = None, limit: int = None) -> Dict:
         """
         Analyze fund flow based on trade data
         """
         try:
-            # Get historical trades
-            trades = self.binance_client.get_aggregate_trades(
-                symbol=symbol, 
-                limit=limit
-            )
+            if limit is None:
+                limit = 100
+            
+            # Get technical data which includes trades
+            tech_data = await get_technical_data_cached(symbol, interval, limit)
+            trades = tech_data.get('trades', [])
+            
+            if not trades:
+                logger.warning(f"No trade data available for {symbol}")
+                return {}
             
             buy_volume = 0
             sell_volume = 0
@@ -222,11 +233,11 @@ class EnhancedTradingSystem:
             sell_count = 0
             
             for trade in trades:
-                if trade['m']:  # Buyer is maker (sell order filled)
-                    sell_volume += float(trade['q'])
+                if trade.get('m', True):  # Buyer is maker (sell order filled)
+                    sell_volume += float(trade.get('q', 0))
                     sell_count += 1
                 else:  # Seller is maker (buy order filled)
-                    buy_volume += float(trade['q'])
+                    buy_volume += float(trade.get('q', 0))
                     buy_count += 1
             
             total_volume = buy_volume + sell_volume
@@ -551,6 +562,9 @@ async def main():
     """
     # Initialize system (without API keys for demo)
     trading_system = EnhancedTradingSystem()
+    
+    # Initialize the API manager
+    await trading_system.initialize_async_client()
     
     # Example symbols to analyze
     symbols = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT']

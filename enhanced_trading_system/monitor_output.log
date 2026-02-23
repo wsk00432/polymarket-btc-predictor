@@ -1,0 +1,656 @@
+2026-02-02 13:13:05,538 - INFO - Binance client initialized without authentication
+================================================================================
+🚀 ENHANCED TRADING ANALYSIS SYSTEM - MONITORING MODE
+Running continuous analysis with integrated OI Spike + Technical Indicators
+================================================================================
+
+🔍 Monitoring 3 symbols:
+   • BTCUSDT
+   • ETHUSDT
+   • SOLUSDT
+
+📊 Starting continuous analysis (updates every 30 seconds)...
+Press Ctrl+C to stop
+
+
+[13:13:05] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   2.5% | Score: -0.025 | Price: 75521.19
+    RSI: 34.60
+• ETHUSDT  | SELL         | Conf:  30.7% | Score: -0.307 | Price: 2217.33
+    RSI: 32.47
+    Risk Mgmt: SL 2265.27087654 | TP 2121.44824691
+• SOLUSDT  | HOLD         | Conf:   3.2% | Score: +0.032 | Price: 99.69
+    RSI: 39.57
+
+📈 Summary: 3 analyzed | 0 buys | 1 sells | 2 holds
+--------------------------------------------------------------------------------
+
+[13:13:36] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   1.7% | Score: -0.017 | Price: 75502.0
+    RSI: 34.00
+• ETHUSDT  | HOLD         | Conf:  29.6% | Score: -0.296 | Price: 2215.91
+    RSI: 31.75
+• SOLUSDT  | HOLD         | Conf:   6.4% | Score: +0.064 | Price: 99.57
+    RSI: 37.71
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:14:07] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   2.8% | Score: -0.028 | Price: 75525.47
+    RSI: 34.80
+• ETHUSDT  | SELL         | Conf:  30.5% | Score: -0.305 | Price: 2217.17
+    RSI: 32.39
+    Risk Mgmt: SL 2265.10768469 | TP 2121.29463061
+• SOLUSDT  | HOLD         | Conf:   5.4% | Score: +0.054 | Price: 99.62
+    RSI: 38.43
+
+📈 Summary: 3 analyzed | 0 buys | 1 sells | 2 holds
+--------------------------------------------------------------------------------
+
+[13:14:38] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   1.3% | Score: -0.013 | Price: 75488.01
+    RSI: 33.66
+• ETHUSDT  | SELL         | Conf:  30.5% | Score: -0.305 | Price: 2217.13
+    RSI: 32.37
+    Risk Mgmt: SL 2265.06686713 | TP 2121.25626574
+• SOLUSDT  | HOLD         | Conf:   6.6% | Score: +0.066 | Price: 99.56
+    RSI: 37.57
+
+📈 Summary: 3 analyzed | 0 buys | 1 sells | 2 holds
+--------------------------------------------------------------------------------
+
+[13:15:10] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   0.6% | Score: -0.006 | Price: 75501.69
+    RSI: 34.14
+• ETHUSDT  | SELL         | Conf:  30.0% | Score: -0.300 | Price: 2218.27
+    RSI: 32.94
+    Risk Mgmt: SL 2266.2525715 | TP 2122.304857
+• SOLUSDT  | SELL         | Conf:  34.3% | Score: -0.343 | Price: 99.65
+    RSI: 39.23
+    Risk Mgmt: SL 101.77597033 | TP 95.39805934
+
+📈 Summary: 3 analyzed | 0 buys | 2 sells | 1 holds
+--------------------------------------------------------------------------------
+
+[13:15:41] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   2.9% | Score: +0.029 | Price: 75407.77
+    RSI: 31.72
+• ETHUSDT  | HOLD         | Conf:  25.4% | Score: -0.254 | Price: 2211.31
+    RSI: 29.12
+• SOLUSDT  | HOLD         | Conf:  29.1% | Score: -0.291 | Price: 99.41
+    RSI: 35.18
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:16:12] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   3.4% | Score: +0.034 | Price: 75393.98
+    RSI: 31.40
+• ETHUSDT  | HOLD         | Conf:  25.3% | Score: -0.253 | Price: 2210.81
+    RSI: 28.88
+• SOLUSDT  | HOLD         | Conf:  28.5% | Score: -0.285 | Price: 99.38
+    RSI: 34.76
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:16:43] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.9% | Score: +0.099 | Price: 75357.83
+    RSI: 30.57
+• ETHUSDT  | HOLD         | Conf:  19.5% | Score: -0.195 | Price: 2210.07
+    RSI: 28.53
+• SOLUSDT  | HOLD         | Conf:  27.5% | Score: -0.275 | Price: 99.33
+    RSI: 34.08
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:17:14] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:  10.5% | Score: +0.105 | Price: 75148.69
+    RSI: 26.54
+• ETHUSDT  | HOLD         | Conf:  19.5% | Score: -0.195 | Price: 2205.53
+    RSI: 26.56
+• SOLUSDT  | HOLD         | Conf:  23.0% | Score: -0.230 | Price: 99.06
+    RSI: 30.83
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:17:45] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:  10.5% | Score: +0.105 | Price: 75085.72
+    RSI: 25.53
+• ETHUSDT  | HOLD         | Conf:  19.5% | Score: -0.195 | Price: 2204.54
+    RSI: 26.16
+• SOLUSDT  | HOLD         | Conf:  22.6% | Score: -0.226 | Price: 99.04
+    RSI: 30.61
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:18:16] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:  10.5% | Score: +0.105 | Price: 75275.71
+    RSI: 28.85
+• ETHUSDT  | HOLD         | Conf:  27.8% | Score: -0.278 | Price: 2215.54
+    RSI: 31.33
+• SOLUSDT  | HOLD         | Conf:  27.7% | Score: -0.277 | Price: 99.34
+    RSI: 34.21
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:18:47] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:  10.5% | Score: +0.105 | Price: 75139.99
+    RSI: 26.40
+• ETHUSDT  | HOLD         | Conf:  25.2% | Score: -0.252 | Price: 2210.41
+    RSI: 28.69
+• SOLUSDT  | HOLD         | Conf:  23.3% | Score: -0.233 | Price: 99.08
+    RSI: 31.05
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:19:18] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:  10.5% | Score: +0.105 | Price: 75212.0
+    RSI: 27.64
+• ETHUSDT  | HOLD         | Conf:  25.3% | Score: -0.253 | Price: 2210.8
+    RSI: 28.87
+• SOLUSDT  | HOLD         | Conf:  23.9% | Score: -0.239 | Price: 99.12
+    RSI: 31.49
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:19:50] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:  10.5% | Score: +0.105 | Price: 75227.8
+    RSI: 27.93
+• ETHUSDT  | HOLD         | Conf:  26.0% | Score: -0.260 | Price: 2213.24
+    RSI: 30.09
+• SOLUSDT  | HOLD         | Conf:  24.2% | Score: -0.242 | Price: 99.14
+    RSI: 31.72
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:20:21] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75247.0
+    RSI: 28.29
+• ETHUSDT  | HOLD         | Conf:  21.0% | Score: -0.210 | Price: 2214.19
+    RSI: 30.53
+• SOLUSDT  | HOLD         | Conf:  16.9% | Score: -0.169 | Price: 99.15
+    RSI: 31.73
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:20:52] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75123.63
+    RSI: 25.82
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2209.27
+    RSI: 27.77
+• SOLUSDT  | HOLD         | Conf:  15.2% | Score: -0.152 | Price: 98.96
+    RSI: 29.39
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:21:23] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75162.0
+    RSI: 26.54
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2207.57
+    RSI: 26.93
+• SOLUSDT  | HOLD         | Conf:  15.2% | Score: -0.152 | Price: 98.9
+    RSI: 28.72
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:21:54] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.0% | Score: +0.090 | Price: 75289.56
+    RSI: 30.53
+• ETHUSDT  | HOLD         | Conf:  23.0% | Score: -0.230 | Price: 2215.94
+    RSI: 32.46
+• SOLUSDT  | HOLD         | Conf:  17.6% | Score: -0.176 | Price: 99.2
+    RSI: 32.41
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:22:25] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75241.25
+    RSI: 28.16
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2212.41
+    RSI: 29.47
+• SOLUSDT  | HOLD         | Conf:  15.2% | Score: -0.152 | Price: 99.0
+    RSI: 29.85
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:22:56] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   7.4% | Score: +0.074 | Price: 75319.99
+    RSI: 32.08
+• ETHUSDT  | HOLD         | Conf:  20.9% | Score: -0.209 | Price: 2213.92
+    RSI: 30.37
+• SOLUSDT  | HOLD         | Conf:  16.7% | Score: -0.167 | Price: 99.13
+    RSI: 31.47
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:23:27] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   3.8% | Score: +0.038 | Price: 75397.4
+    RSI: 35.74
+• ETHUSDT  | HOLD         | Conf:  21.9% | Score: -0.219 | Price: 2215.16
+    RSI: 31.39
+• SOLUSDT  | HOLD         | Conf:  26.1% | Score: -0.261 | Price: 99.29
+    RSI: 34.80
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:23:58] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   7.9% | Score: +0.079 | Price: 75311.24
+    RSI: 31.64
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2211.39
+    RSI: 28.90
+• SOLUSDT  | HOLD         | Conf:  17.1% | Score: -0.171 | Price: 99.16
+    RSI: 31.87
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:24:29] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   8.8% | Score: +0.088 | Price: 75292.14
+    RSI: 30.66
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2209.7
+    RSI: 28.00
+• SOLUSDT  | HOLD         | Conf:  16.3% | Score: -0.163 | Price: 99.1
+    RSI: 31.08
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:25:00] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   6.7% | Score: +0.067 | Price: 75331.04
+    RSI: 32.76
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2209.92
+    RSI: 28.04
+• SOLUSDT  | HOLD         | Conf:  17.2% | Score: -0.172 | Price: 99.1
+    RSI: 30.94
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:25:32] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   8.7% | Score: +0.087 | Price: 75256.5
+    RSI: 30.84
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2208.71
+    RSI: 27.33
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 99.02
+    RSI: 29.82
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:26:03] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   4.6% | Score: +0.046 | Price: 75373.35
+    RSI: 34.91
+• ETHUSDT  | HOLD         | Conf:  22.3% | Score: -0.223 | Price: 2212.98
+    RSI: 31.83
+• SOLUSDT  | HOLD         | Conf:  18.1% | Score: -0.181 | Price: 99.16
+    RSI: 31.85
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:26:34] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.2% | Score: +0.092 | Price: 75233.07
+    RSI: 30.29
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2206.61
+    RSI: 26.19
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.83
+    RSI: 27.44
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:27:06] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75079.99
+    RSI: 27.09
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2196.16
+    RSI: 21.67
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.46
+    RSI: 23.76
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:27:37] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75036.32
+    RSI: 26.30
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2194.1
+    RSI: 20.95
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.42
+    RSI: 23.42
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:28:08] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75052.49
+    RSI: 26.58
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2194.97
+    RSI: 21.25
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.43
+    RSI: 23.51
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:28:39] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 74988.55
+    RSI: 25.48
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2188.98
+    RSI: 19.37
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.29
+    RSI: 22.38
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:29:10] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75069.39
+    RSI: 26.89
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2191.61
+    RSI: 20.15
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.43
+    RSI: 23.51
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:29:41] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75040.01
+    RSI: 26.36
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2192.44
+    RSI: 20.41
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.46
+    RSI: 23.76
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:30:12] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75113.29
+    RSI: 28.68
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2192.79
+    RSI: 20.43
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.47
+    RSI: 23.77
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:30:43] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75082.79
+    RSI: 27.13
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2194.03
+    RSI: 20.89
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.52
+    RSI: 24.28
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:31:14] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75098.85
+    RSI: 27.87
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2193.91
+    RSI: 20.85
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.55
+    RSI: 25.02
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:31:45] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75064.43
+    RSI: 26.73
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2192.69
+    RSI: 20.39
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.42
+    RSI: 23.28
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:32:16] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   6.5% | Score: +0.065 | Price: 75196.45
+    RSI: 33.05
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2198.94
+    RSI: 26.90
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.65
+    RSI: 28.09
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:32:47] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   7.8% | Score: +0.078 | Price: 75170.11
+    RSI: 31.72
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2199.95
+    RSI: 28.15
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.66
+    RSI: 28.38
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:33:18] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   2.9% | Score: +0.029 | Price: 75307.69
+    RSI: 38.12
+• ETHUSDT  | HOLD         | Conf:  24.7% | Score: -0.247 | Price: 2205.39
+    RSI: 34.23
+• SOLUSDT  | HOLD         | Conf:  17.7% | Score: -0.177 | Price: 98.77
+    RSI: 31.44
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:33:50] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   1.0% | Score: +0.010 | Price: 75353.38
+    RSI: 39.98
+• ETHUSDT  | HOLD         | Conf:  26.3% | Score: -0.263 | Price: 2206.99
+    RSI: 35.82
+• SOLUSDT  | HOLD         | Conf:  18.5% | Score: -0.185 | Price: 98.8
+    RSI: 32.24
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:34:21] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   8.3% | Score: +0.083 | Price: 75159.92
+    RSI: 31.20
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2200.48
+    RSI: 28.79
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.41
+    RSI: 23.19
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:34:52] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75091.85
+    RSI: 27.46
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2196.69
+    RSI: 23.94
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.25
+    RSI: 21.77
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:35:23] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   6.4% | Score: +0.064 | Price: 75214.01
+    RSI: 34.59
+• ETHUSDT  | HOLD         | Conf:  20.5% | Score: -0.205 | Price: 2199.62
+    RSI: 28.08
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.36
+    RSI: 25.17
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:35:54] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   4.6% | Score: +0.046 | Price: 75249.06
+    RSI: 36.44
+• ETHUSDT  | HOLD         | Conf:  21.3% | Score: -0.213 | Price: 2201.6
+    RSI: 30.77
+• SOLUSDT  | HOLD         | Conf:  16.2% | Score: -0.162 | Price: 98.41
+    RSI: 26.73
+
+📈 Summary: 3 analyzed | 0 buys | 0 sells | 3 holds
+--------------------------------------------------------------------------------
+
+[13:36:25] Running analysis...
+
+📋 LATEST SIGNALS:
+------------------------------------------------------------
+• BTCUSDT  | HOLD         | Conf:   9.5% | Score: +0.095 | Price: 75055.22
+    RSI: 27.45

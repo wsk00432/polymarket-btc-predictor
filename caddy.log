@@ -10,3 +10,52 @@
 {"level":"info","ts":1769791308.720921,"logger":"tls","msg":"finished cleaning storage units"}
 {"level":"info","ts":1769877708.7207215,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
 {"level":"info","ts":1769877708.722068,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"warn","ts":1769964108.7204494,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/root/.local/share/caddy","instance":"7ab99182-53af-4695-9f14-2b61d02a2486","try_again":1770050508.7204454,"try_again_in":86399.999999287}
+{"level":"info","ts":1769964108.721067,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1770050508.7979534,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1770050508.8172867,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"warn","ts":1770136908.7260385,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/root/.local/share/caddy","instance":"7ab99182-53af-4695-9f14-2b61d02a2486","try_again":1770223308.7260349,"try_again_in":86399.999999276}
+{"level":"info","ts":1770136908.7276247,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1770223308.720055,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1770223308.7210934,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1770309708.7212532,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1770309708.7248232,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"warn","ts":1770396108.719512,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/root/.local/share/caddy","instance":"7ab99182-53af-4695-9f14-2b61d02a2486","try_again":1770482508.7195086,"try_again_in":86399.999999313}
+{"level":"info","ts":1770396108.719559,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1770482508.718744,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1770482508.7191079,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1770568908.7192576,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1770568908.71966,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1770655308.721591,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1770655308.7224133,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"warn","ts":1770741708.7195563,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/root/.local/share/caddy","instance":"7ab99182-53af-4695-9f14-2b61d02a2486","try_again":1770828108.7195523,"try_again_in":86399.999998898}
+{"level":"info","ts":1770741708.7196186,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1770828108.7200177,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1770828108.7205467,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"warn","ts":1770914508.7187886,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/root/.local/share/caddy","instance":"7ab99182-53af-4695-9f14-2b61d02a2486","try_again":1771000908.7187843,"try_again_in":86399.999998606}
+{"level":"info","ts":1770914508.718863,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1771000908.7213426,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1771000908.7234492,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"warn","ts":1771087308.7193196,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/root/.local/share/caddy","instance":"7ab99182-53af-4695-9f14-2b61d02a2486","try_again":1771173708.719316,"try_again_in":86399.999999197}
+{"level":"info","ts":1771087308.7202086,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1771173708.7195988,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1771173708.7197714,"logger":"tls","msg":"certificate expired beyond grace period; cleaning up","storage":"FileStorage:/root/.local/share/caddy","asset_key":"certificates/local/43.167.222.200/43.167.222.200.crt","expired_for":1343050.719768988,"grace_period":1209600}
+{"level":"info","ts":1771173708.719782,"logger":"tls","msg":"deleting asset because resource expired","storage":"FileStorage:/root/.local/share/caddy","asset_key":"certificates/local/43.167.222.200/43.167.222.200.crt"}
+{"level":"info","ts":1771173708.7209845,"logger":"tls","msg":"deleting asset because resource expired","storage":"FileStorage:/root/.local/share/caddy","asset_key":"certificates/local/43.167.222.200/43.167.222.200.key"}
+{"level":"info","ts":1771173708.721019,"logger":"tls","msg":"deleting asset because resource expired","storage":"FileStorage:/root/.local/share/caddy","asset_key":"certificates/local/43.167.222.200/43.167.222.200.json"}
+{"level":"info","ts":1771173708.7210593,"logger":"tls","msg":"deleting site folder because key is empty","storage":"FileStorage:/root/.local/share/caddy","site_key":"certificates/local/43.167.222.200"}
+{"level":"info","ts":1771173708.721267,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"warn","ts":1771260108.7191486,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/root/.local/share/caddy","instance":"7ab99182-53af-4695-9f14-2b61d02a2486","try_again":1771346508.7191443,"try_again_in":86399.999999229}
+{"level":"info","ts":1771260108.719247,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1771346508.721473,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1771346508.7226236,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"warn","ts":1771432908.7204435,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/root/.local/share/caddy","instance":"7ab99182-53af-4695-9f14-2b61d02a2486","try_again":1771519308.72044,"try_again_in":86399.999999163}
+{"level":"info","ts":1771432908.720979,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1771519308.7200246,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1771519308.720261,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1771605708.721201,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1771605708.7225091,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"warn","ts":1771692108.7195811,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/root/.local/share/caddy","instance":"7ab99182-53af-4695-9f14-2b61d02a2486","try_again":1771778508.7195768,"try_again_in":86399.999999318}
+{"level":"info","ts":1771692108.7204828,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1771778508.7247674,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1771778508.7251499,"logger":"tls","msg":"finished cleaning storage units"}
