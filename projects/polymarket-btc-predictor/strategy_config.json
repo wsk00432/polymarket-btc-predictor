@@ -1,14 +1,14 @@
 {
   "indicator_weights": {
-    "rsi": 0.2679999999999998,
+    "rsi": 0.05,
     "macd": 0.25,
     "ma_trend": 0.05,
     "volume": 0.15,
     "bollinger": 0.15,
     "macd_histogram": 0.05,
     "volume_indicator": 0.05,
-    "bollinger_position": 0.1859999999999998,
-    "momentum": 0.12200000000000003
+    "bollinger_position": 0.24600000000000016,
+    "momentum": 0.09999999999999967
   },
   "sentiment_weight": 0.1,
   "confidence_threshold": 0.6,

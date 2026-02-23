@@ -1,0 +1,40 @@
+{
+  "type": "4h",
+  "generated_at": "2026-02-23T17:25:16.711213",
+  "period": {
+    "start": "2026-02-23T13:25:16.711243",
+    "end": "2026-02-23T17:25:16.711267",
+    "hours": 4
+  },
+  "predictions": {
+    "total_predictions": 233,
+    "avg_confidence": 0.1244415182832076,
+    "prediction_distribution": {
+      "UP": 0,
+      "DOWN": 0,
+      "HOLD": 233
+    },
+    "avg_price": 65579.64248927037,
+    "high_price": 65996.71,
+    "low_price": 64934.95,
+    "price_change": 1.2120440458884612,
+    "start_price": 64952.26,
+    "end_price": 65739.51
+  },
+  "accuracy": {
+    "total_evaluated": 0,
+    "correct": 0,
+    "accuracy": 0.0,
+    "by_direction": {}
+  },
+  "market": {
+    "btc_price_current": 65739.51,
+    "btc_price_change": 1.2120440458884612,
+    "volatility": 1.619039018356537
+  },
+  "insights": [
+    "预测方向以HOLD为主 (100.0%)",
+    "平均置信度低 (0.124)，市场震荡",
+    "市场相对平稳 (1.62%)"
+  ]
+}
