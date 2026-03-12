@@ -5,7 +5,7 @@ import sqlite3
 import os
 
 # Initialize the alerts database
-alerts_db_path = '/root/clawd/binance-oi-spike-radar-clone/data/alerts.sqlite3'
+alerts_db_path = 'alerts.sqlite3'
 conn = sqlite3.connect(alerts_db_path)
 conn.execute(
     """

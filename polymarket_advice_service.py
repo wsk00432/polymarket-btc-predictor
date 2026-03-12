@@ -42,14 +42,18 @@ def get_polymarket_investment_advice():
                 
                 # Safely parse outcomes and prices
                 try:
-                    outcomes_str = market.get('outcomes', '["N/A", "N/A"]')
-                    outcomes = eval(outcomes_str) if isinstance(outcomes_str, str) else outcomes_str
+                    outcomes = market.get('outcomes', ['N/A', 'N/A'])
+                    # If outcomes is a string, try to parse it as JSON
+                    if isinstance(outcomes, str):
+                        outcomes = json.loads(outcomes)
                 except:
                     outcomes = ['N/A', 'N/A']
                 
                 try:
-                    prices_str = market.get('outcomePrices', '[0, 0]')
-                    outcome_prices = eval(prices_str) if isinstance(prices_str, str) else prices_str
+                    outcome_prices = market.get('outcomePrices', [0, 0])
+                    # If outcome_prices is a string, try to parse it as JSON
+                    if isinstance(outcome_prices, str):
+                        outcome_prices = json.loads(outcome_prices)
                 except:
                     outcome_prices = [0, 0]
                 
@@ -126,7 +130,7 @@ def get_polymarket_investment_advice():
         ]
         for line in error_msg:
             print(line)
-        with open("/root/clawd/polymarket_real_advice.log", "a", encoding="utf-8") as f:
+        with open("polymarket_real_advice.log", "a", encoding="utf-8") as f:
             f.write('\n'.join(error_msg) + '\n')
     except json.JSONDecodeError:
         error_msg = [
@@ -135,7 +139,7 @@ def get_polymarket_investment_advice():
         ]
         for line in error_msg:
             print(line)
-        with open("/root/clawd/polymarket_real_advice.log", "a", encoding="utf-8") as f:
+        with open("polymarket_real_advice.log", "a", encoding="utf-8") as f:
             f.write('\n'.join(error_msg) + '\n')
     except Exception as e:
         error_msg = [
@@ -144,7 +148,7 @@ def get_polymarket_investment_advice():
         ]
         for line in error_msg:
             print(line)
-        with open("/root/clawd/polymarket_real_advice.log", "a", encoding="utf-8") as f:
+        with open("polymarket_real_advice.log", "a", encoding="utf-8") as f:
             f.write('\n'.join(error_msg) + '\n')
 
 def run_periodic_advice():
@@ -162,7 +166,7 @@ def run_periodic_advice():
         print(line)
     
     # Write startup message to log
-    with open("/root/clawd/polymarket_real_advice.log", "a", encoding="utf-8") as f:
+    with open("polymarket_real_advice.log", "a", encoding="utf-8") as f:
         f.write('\n'.join(startup_msg))
     
     # Initial run
@@ -180,7 +184,7 @@ def run_periodic_advice():
         ]
         for line in end_msg:
             print(line)
-        with open("/root/clawd/polymarket_real_advice.log", "a", encoding="utf-8") as f:
+        with open("polymarket_real_advice.log", "a", encoding="utf-8") as f:
             f.write('\n'.join(end_msg) + '\n')
 
 if __name__ == "__main__":
